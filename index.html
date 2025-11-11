@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research Study Banners</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+        
+        .banner {
+            margin-bottom: 2rem;
+            transition: all 0.3s ease;
+        }
+        
+        .banner:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        
+        .pulse {
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        
+        .floating {
+            animation: floating 3s ease-in-out infinite;
+        }
+        
+        @keyframes floating {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+        
+        .gradient-text {
+            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        
+        .clip-path {
+            clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+        }
+        
+        .glow {
+            box-shadow: 0 0 15px rgba(59, 130, 246, 0.5);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 p-8 font-sans">
+    <div class="max-w-6xl mx-auto">
+        <h1 class="text-4xl font-bold text-center mb-12 gradient-text">IC Research Murfreesboro TN</h1>
+        <h2 class="text-2xl font-semibold text-center mb-8 text-gray-700">Currently Enrolling Studies - 20 Unique Banners</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Banner 1: Modern Gradient -->
+            <div class="banner rounded-xl overflow-hidden bg-gradient-to-r from-blue-500 to-purple-600 p-6 text-white shadow-lg">
+                <div class="flex items-center justify-between">
+                    <div>
+                        <span class="text-sm font-semibold uppercase tracking-wider">New Opportunity</span>
+                        <h3 class="text-2xl font-bold mt-1">Currently Enrolling Studies</h3>
+                        <p class="mt-2 opacity-90">IC Research Murfreesboro TN</p>
+                    </div>
+                    <div class="text-4xl">
+                        <i class="fas fa-flask"></i>
+                    </div>
+                </div>
+                <button class="mt-4 bg-white text-blue-600 px-4 py-2 rounded-full text-sm font-semibold hover:bg-gray-100 transition">Learn More</button>
+            </div>
+
+            <!-- Banner 2: Clean White -->
+            <div class="banner bg-white rounded-lg border border-gray-200 p-6 shadow-sm hover:shadow-md transition">
+                <div class="flex items-start">
+                    <div class="bg-blue-100 p-3 rounded-full mr-4">
+                        <i class="fas fa-microscope text-blue-600"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-gray-800">Currently Enrolling Studies</h3>
+                        <p class="text-gray-600 mt-1">IC Research Murfreesboro TN</p>
+                        <div class="mt-3 flex items-center text-sm text-blue-600 font-medium">
+                            <span>Join Now</span>
+                            <i class="fas fa-arrow-right ml-2"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Banner 3: Dark Elegant -->
+            <div class="banner bg-gray-900 rounded-lg p-6 text-white glow">
+                <div class="flex justify-between items-center">
+                    <div>
+                        <h3 class="text-2xl font-bold">Research Studies</h3>
+                        <p class="text-gray-300 mt-1">Currently Enrolling in Murfreesboro</p>
+                    </div>
+                    <div class="bg-blue-600 px-4 py-2 rounded-full text-sm font-bold">
+                        New
+                    </div>
+                </div>
+                <div class="mt-4 pt-4 border-t border-gray-700">
+                    <p class="text-gray-400">IC Research is looking for participants</p>
+                    <button class="mt-3 bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded text-sm font-medium transition">Enroll Today</button>
+                </div>
+            </div>
+
+            <!-- Banner 4: Medical Theme -->
+            <div class="banner bg-white rounded-xl border-2 border-blue-200 p-6 shadow-md">
+                <div class="flex items-center">
+                    <div class="bg-red-100 p-3 rounded-lg mr-4">
+                        <i class="fas fa-heartbeat text-red-500 text-2xl"></i>
+                    </div>
+                    <div>
+                        <span class="text-xs font-semibold text-blue-800 uppercase tracking-wider">Clinical Research</span>
+                        <h3 class="text-xl font-bold text-gray-800 mt-1">Currently Enrolling Studies</h3>
+                        <p class="text-gray-600 text-sm mt-1">IC Research Murfreesboro TN</p>
+                    </div>
+                </div>
+                <div class="mt-4 flex justify-between items-center">
+                    <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">Compensation Available</span>
+                    <button class="text-blue-600 text-sm font-medium flex items-center">
+                        Details <i class="fas fa-chevron-right ml-1 text-xs"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Banner 5: Minimalist -->
+            <div class="banner bg-white rounded-lg border border-gray-100 p-6">
+                <div class="text-center">
+                    <h3 class="text-xl font-bold text-gray-800">Participate in Research</h3>
+                    <p class="text-gray-600 mt-2">Currently Enrolling Studies at IC Research</p>
+                    <div class="mt-4">
+                        <span class="inline-block bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full">Murfreesboro, TN</span>
+                    </div>
+                    <button class="mt-4 mx-auto bg-gray-800 hover:bg-gray-700 text-white px-4 py-2 rounded text-sm font-medium transition block">Get Started</button>
+                </div>
+            </div>
+
+            <!-- Banner 6: Vibrant Orange -->
+            <div class="banner bg-gradient-to-r from-orange-400 to-orange-500 rounded-xl p-6 text-white shadow-lg pulse">
+                <div class="flex justify-between items-center">
+                    <div>
+                        <h3 class="text-2xl font-bold">Help Advance Medicine</h3>
+                        <p class="mt-2 opacity-90">Currently Enrolling Studies</p>
+                        <p class="text-sm mt-1">IC Research Murfreesboro TN</p>
+                    </div>
+                    <div class="text-4xl opacity-80">
+                        <i class="fas fa-clipboard-check"></i>
+                    </div>
+                </div>
+                <div class="mt-4 flex justify-end">
+                    <button class="bg-white text-orange-600 px-4 py-2 rounded-full text-sm font-semibold hover:bg-gray-100 transition">Join Study</button>
+                </div>
+            </div>
+
+            <!-- Banner 7: Card with Badges -->
+            <div class="banner bg-white rounded-xl shadow-md overflow-hidden">
+                <div class="bg-blue-600 p-4 text-white">
+                    <h3 class="text-xl font-bold">Research Opportunities</h3>
+                </div>
+                <div class="p-6">
+                    <p class="text-gray-700">Currently Enrolling Studies at IC Research in Murfreesboro, TN</p>
+                    <div class="mt-4 flex flex-wrap gap-2">
+                        <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">Paid</span>
+                        <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded">Local</span>
+                        <span class="bg-purple-100 text-purple-800 text-xs px-2 py-1 rounded">Health</span>
+                    </div>
+                    <button class="mt-4 w-full bg-blue-600 hover:bg-blue-700 text-white py-2 rounded font-medium transition">Learn More</button>
+                </div>
+            </div>
+
+            <!-- Banner 8: Floating Elements -->
+            <div class="banner bg-gradient-to-br from-indigo-500 to-purple-600 rounded-2xl p-6 text-white relative overflow-hidden">
+                <div class="absolute -top-10 -right-10 w-32 h-32 bg-white bg-opacity-10 rounded-full"></div>
+                <div class="absolute -bottom-10 -left-10 w-40 h-40 bg-white bg-opacity-5 rounded-full"></div>
+                <div class="relative z-10">
+                    <h3 class="text-2xl font-bold">Currently Enrolling</h3>
+                    <p class="mt-2 text-lg">Medical Research Studies</p>
+                    <p class="mt-1 text-sm opacity-90">IC Research Murfreesboro TN</p>
+                    <div class="mt-6 floating">
+                        <button class="bg-white text-indigo-600 px-6 py-2 rounded-full font-semibold hover:bg-gray-100 transition">Apply Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Banner 9: Newspaper Style -->
+            <div class="banner bg-white border-2 border-black p-6">
+                <div class="flex items-start">
+                    <div class="border-r-2 border-black pr-4 mr-4">
+                        <span class="text-4xl font-bold">!</span>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold uppercase">Research Studies Enrolling Now</h3>
+                        <p class="mt-2 font-serif">IC Research in Murfreesboro, TN is currently seeking participants for clinical trials. Compensation available for qualified candidates.</p>
+                        <button class="mt-3 bg-black text-white px-4 py-1 text-sm font-bold hover:bg-gray-800 transition">READ MORE</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Banner 10: Green Health Theme -->
+            <div class="banner bg-gradient-to-r from-green-500 to-teal-500 rounded-lg p-6 text-white">
+                <div class="flex items-center justify-between">
+                    <div>
+                        <span class="text-xs font-semibold uppercase tracking-wider">Clinical Trials</span>
+                        <h3 class="text-2xl font-bold mt-1">Enrolling Participants</h3>
+                        <p class="mt-2 opacity-90">IC Research Murfreesboro TN</p>
+                    </div>
+                    <div class="flex space-x-2">
+                        <div class="bg-white bg-opacity-20 p-3 rounded-full">
+                            <i class="fas fa-user-md"></i>
+                        </div>
+                        <div class="bg-white bg-opacity-20 p-3 rounded-full">
+                            <i class="fas fa-pills"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-4 pt-4 border-t border-white border-opacity-20">
+                    <button class="bg-white text-green-700 px-4 py-2 rounded-full text-sm font-semibold hover:bg-gray-100 transition">Join Study</button>
+                </div>
+            </div>
+
+            <!-- Banner 11: Polaroid Style -->
+            <div class="banner bg-white rounded-lg shadow-lg border border-gray-200 p-0 overflow-hidden transform rotate-1 hover:rotate-0 transition">
+                <div class="bg-blue-600 p-4 text-white">
+                    <h3 class="text-xl font-bold text-center">Research Study Enrollment</h3>
+                </div>
+                <div class="p-6">
+                    <p class="text-gray-700 text-center">Currently accepting participants at IC Research in Murfreesboro, TN</p>
+                    <div class="mt-4 flex justify-center">
+                        <span class="bg-yellow-100 text-yellow-800 text-xs px-3 py-1 rounded-full">Limited Spots</span>
+                    </div>
+                    <div class="mt-6 text-center">
+                        <button class="inline-block border-2 border-blue-600 text-blue-600 px-6 py-2 rounded-full font-medium hover:bg-blue-600 hover:text-white transition">Call Now</button>
+                    </div>
+                </div>
+                <div class="bg-gray-100 p-2 text-center text-xs text-gray-500">
+                    IC Research © 2023
+                </div>
+            </div>
+
+            <!-- Banner 12: Tech Inspired -->
+            <div class="banner bg-gray-900 rounded-xl p-6 text-white border border-gray-700 relative overflow-hidden">
+                <div class="absolute inset-0 bg-gradient-to-r from-blue-900 to-purple-900 opacity-30"></div>
+                <div class="relative z-10">
+                    <div class="flex items-center">
+                        <div class="bg-blue-500 p-2 rounded mr-4">
+                            <i class="fas fa-dna text-white"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold">Innovative Research Studies</h3>
+                            <p class="text-gray-300 text-sm mt-1">Currently Enrolling - Murfreesboro, TN</p>
+                        </div>
+                    </div>
+                    <div class="mt-6 grid grid-cols-2 gap-4">
+                        <div class="bg-gray-800 bg-opacity-50 p-3 rounded-lg">
+                            <p class="text-xs text-gray-400">Compensation</p>
+                            <p class="font-medium">Available</p>
+                        </div>
+                        <div class="bg-gray-800 bg-opacity-50 p-3 rounded-lg">
+                            <p class="text-xs text-gray-400">Location</p>
+                            <p class="font-medium">Local</p>
+                        </div>
+                    </div>
+                    <button class="mt-6 w-full bg-blue-600 hover:bg-blue-700 py-2 rounded-lg font-medium transition">Apply Online</button>
+                </div>
+            </div>
+
+            <!-- Banner 13: Ribbon Style -->
+            <div class="banner bg-white rounded-lg shadow-sm border border-gray-200 relative pt-8 overflow-hidden">
+                <div class="absolute -top-2 -right-6 bg-red-600 text-white text-xs font-bold px-8 py-1 transform rotate-45">
+                    NEW
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-gray-800">Currently Enrolling Studies</h3>
+                    <p class="text-gray-600 mt-2">IC Research Murfreesboro TN</p>
+                    <div class="mt-4 flex items-center text-blue-600">
+                        <i class="fas fa-phone-alt mr-2"></i>
+                        <span class="font-medium">Call for eligibility</span>
+                    </div>
+                    <button class="mt-4 w-full bg-gray-100 hover:bg-gray-200 text-gray-800 py-2 rounded font-medium transition">More Information</button>
+                </div>
+            </div>
+
+            <!-- Banner 14: Abstract Shapes -->
+            <div class="banner bg-gradient-to-br from-purple-50 to-blue-50 rounded-2xl p-6 relative overflow-hidden">
+                <div class="absolute top-0 right-0 w-32 h-32 bg-purple-200 rounded-full opacity-20 -mr-10 -mt-10"></div>
+                <div class="absolute bottom-0 left-0 w-40 h-40 bg-blue-200 rounded-full opacity-20 -ml-10 -mb-10"></div>
+                <div class="relative z-10">
+                    <h3 class="text-2xl font-bold text-gray-800">Help Shape the Future of Medicine</h3>
+                    <p class="text-gray-600 mt-2">Currently Enrolling Studies at IC Research in Murfreesboro</p>
+                    <div class="mt-6">
+                        <button class="bg-purple-600 hover:bg-purple-700 text-white px-6 py-2 rounded-full font-medium transition">Volunteer Today</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Banner 15: Sidebar Style -->
+            <div class="banner bg-white rounded-lg shadow-md overflow-hidden flex">
+                <div class="bg-blue-600 w-3 flex-none"></div>
+                <div class
+</body>
+</html>
